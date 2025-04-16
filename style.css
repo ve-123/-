@@ -1,0 +1,304 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.7;
+    color: #ccc; /* 기본 텍스트 색상 변경 (밝은 회색) */
+    background-color: #1a1a1a; /* 어두운 배경색 */
+}
+
+/* Container for centering content */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Header Styles - 약간 밝은 다크 배경 적용 */
+header {
+    background: linear-gradient(to right, #333, #222); /* 어두운 그라데이션 */
+    color: #eee; /* 헤더 텍스트 색상 */
+    padding: 2.5rem 0;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* 그림자 강화 */
+    border-bottom: 3px solid #444; /* 어두운 테두리 */
+}
+
+header h1 {
+    margin-bottom: 0.8rem;
+    font-size: 2.8rem;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 강화 */
+    color: #fff; /* 제목은 흰색 */
+}
+
+header blockquote {
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: 300;
+    opacity: 0.8; /* 약간 투명도 조정 */
+    color: #bbb; /* 부제목 색상 조정 */
+}
+
+/* Main Content Styles */
+main {
+    padding: 3rem 0;
+}
+
+section {
+    background-color: #2b2b2b; /* 섹션 배경색 (body보다 약간 밝게) */
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 조정 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #444; /* 섹션 테두리 추가 */
+}
+
+section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    color: #7ac0ff; /* 밝은 파란색 계열로 포인트 */
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 3px solid #444; /* 어두운 구분선 */
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+section h3 {
+    color: #eee; /* 부제목 색상 (밝게) */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    color: #ccc; /* 리스트 아이템 텍스트 색상 */
+}
+
+/* Custom bullet points for lists */
+li::before {
+    content: '\2713';
+    color: #7ac0ff; /* 포인트 컬러 */
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Image styling within sections */
+.section-image {
+    float: right;
+    max-width: 45%;
+    margin-left: 2.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 조정 */
+    border: 1px solid #555; /* 이미지 테두리 */
+}
+
+/* Clearfix for sections containing floated elements */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Reviews Section Quote Styling */
+#reviews blockquote {
+    border-left: 5px solid #7ac0ff; /* 포인트 컬러 */
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.5rem;
+    background-color: #333; /* 인용구 배경색 */
+    border-radius: 5px;
+    font-style: normal;
+    color: #ddd; /* 인용구 텍스트 색상 */
+    font-size: 1.1rem; /* 이전 스타일로 복원 */
+}
+
+/* Location Section Styling */
+#location p {
+    margin-bottom: 0.8rem;
+    color: #ccc; /* 텍스트 색상 */
+}
+
+#location strong {
+    color: #7ac0ff; /* 포인트 컬러 */
+    display: inline-block;
+    min-width: 80px;
+    font-weight: 500;
+}
+
+#map {
+    border: 1px solid #555; /* 지도 영역 테두리 */
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #444; /* 지도 배경색 (임시) */
+    color: #999; /* 지도 텍스트 색상 (임시) */
+}
+
+/* Appointment Form Styling */
+#appointment form {
+    margin-top: 2rem;
+    background-color: #333; /* 폼 배경색 */
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #555; /* 폼 테두리 */
+}
+
+#appointment label {
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    color: #eee; /* 라벨 색상 */
+}
+
+#appointment input[type="text"],
+#appointment input[type="tel"],
+#appointment textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border: 1px solid #555; /* 입력 필드 테두리 */
+    border-radius: 5px;
+    margin-bottom: 1.2rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    background-color: #444; /* 입력 필드 배경색 */
+    color: #eee; /* 입력 필드 텍스트 색상 */
+}
+
+#appointment input[type="text"]:focus,
+#appointment input[type="tel"]:focus,
+#appointment textarea:focus {
+    border-color: #7ac0ff; /* 포커스 시 테두리 색상 */
+    outline: none;
+    box-shadow: 0 0 5px rgba(122, 192, 255, 0.4);
+    background-color: #505050; /* 포커스 시 배경색 */
+}
+
+#appointment textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#appointment button[type="submit"] {
+    background-color: #7ac0ff; /* 포인트 컬러 */
+    color: #1a1a1a; /* 버튼 텍스트 (어둡게) */
+    padding: 0.9rem 1.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold; /* 버튼 텍스트 굵게 */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#appointment button[type="submit"]:hover {
+    background-color: #5aaef3; /* 호버 시 약간 밝게 */
+    transform: translateY(-2px);
+}
+
+#appointment blockquote {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-weight: 500;
+    color: #7ac0ff; /* 포인트 컬러 */
+    font-size: 1.2rem;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    color: #aaa; /* 푸터 텍스트 색상 */
+    background-color: #222; /* 푸터 배경색 */
+    border-top: 1px solid #444; /* 푸터 상단 테두리 */
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* 기존 반응형 스타일에 추가적인 색상 조정이 필요하다면 여기에 추가 */
+    /* ... */
+    .container {
+        padding: 0 1rem;
+    }
+    header {
+        padding: 2rem 0;
+    }
+    header h1 {
+        font-size: 2.2rem;
+    }
+    header blockquote {
+        font-size: 1rem;
+    }
+    section {
+        padding: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    section h2 {
+        font-size: 1.6rem;
+    }
+    section h3 {
+        font-size: 1.3rem;
+    }
+    #appointment form {
+        padding: 1.5rem;
+    }
+    #appointment button[type="submit"] {
+        width: 100%;
+        padding: 0.8rem;
+    }
+
+    .section-image {
+        float: none;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 1.5rem;
+        display: block;
+        margin: 1.5rem auto 1rem auto;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+    }
+    header blockquote {
+        font-size: 0.9rem;
+    }
+    section {
+        padding: 1.5rem;
+    }
+    section h2 {
+        font-size: 1.4rem;
+    }
+    section h3 {
+        font-size: 1.2rem;
+    }
+} 
