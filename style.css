@@ -11,8 +11,8 @@
 body {
     font-family: 'Noto Sans KR', sans-serif;
     line-height: 1.7;
-    color: #ccc; /* 기본 텍스트 색상 변경 (밝은 회색) */
-    background-color: #1a1a1a; /* 어두운 배경색 */
+    color: #333; /* 기본 텍스트 색상 변경 (어두운 회색) */
+    background-color: #ffffff; /* 밝은 흰색 배경 */
 }
 
 /* Container for centering content */
@@ -22,86 +22,86 @@ body {
     padding: 0 1.5rem;
 }
 
-/* Header Styles - 약간 밝은 다크 배경 적용 */
+/* Header Styles - 밝은 배경과 그림자 효과 */
 header {
-    background: linear-gradient(to right, #333, #222); /* 어두운 그라데이션 */
-    color: #eee; /* 헤더 텍스트 색상 */
-    padding: 2.5rem 0;
+    background: #f8f9fa; /* 밝은 회색 배경 */
+    color: #333; /* 헤더 텍스트 색상 */
+    padding: 2rem 0;
     text-align: center;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* 그림자 강화 */
-    border-bottom: 3px solid #444; /* 어두운 테두리 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+    border-bottom: 1px solid #e0e0e0; /* 옅은 테두리 */
 }
 
 header h1 {
-    margin-bottom: 0.8rem;
-    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* 텍스트 그림자 강화 */
-    color: #fff; /* 제목은 흰색 */
+    color: #007bff; /* 브랜드 색상 (예: 파란색) */
+    text-shadow: none; /* 텍스트 그림자 제거 */
 }
 
 header blockquote {
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
-    opacity: 0.8; /* 약간 투명도 조정 */
-    color: #bbb; /* 부제목 색상 조정 */
+    opacity: 0.9;
+    color: #555; /* 부제목 색상 조정 */
 }
 
 /* Main Content Styles */
 main {
-    padding: 3rem 0;
+    padding: 2.5rem 0;
 }
 
 section {
-    background-color: #2b2b2b; /* 섹션 배경색 (body보다 약간 밝게) */
-    padding: 2.5rem;
-    margin-bottom: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 그림자 조정 */
+    background-color: #ffffff; /* 섹션 배경색 (흰색) */
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #444; /* 섹션 테두리 추가 */
+    border: 1px solid #eee; /* 옅은 섹션 테두리 */
 }
 
 section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #7ac0ff; /* 밝은 파란색 계열로 포인트 */
-    margin-bottom: 1.5rem;
-    padding-bottom: 0.8rem;
-    border-bottom: 3px solid #444; /* 어두운 구분선 */
-    font-size: 1.8rem;
+    color: #0056b3; /* 더 진한 파란색 */
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.6rem;
+    border-bottom: 2px solid #e0e0e0; /* 옅은 구분선 */
+    font-size: 1.7rem;
     font-weight: 500;
 }
 
 section h3 {
-    color: #eee; /* 부제목 색상 (밝게) */
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
+    color: #333; /* 부제목 색상 (어둡게) */
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
     font-weight: 500;
 }
 
 ul {
     list-style: none;
     padding-left: 0;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 li {
-    margin-bottom: 0.8rem;
+    margin-bottom: 0.6rem;
     padding-left: 1.5rem;
     position: relative;
-    color: #ccc; /* 리스트 아이템 텍스트 색상 */
+    color: #444; /* 리스트 아이템 텍스트 색상 */
 }
 
 /* Custom bullet points for lists */
 li::before {
     content: '\2713';
-    color: #7ac0ff; /* 포인트 컬러 */
+    color: #007bff; /* 포인트 컬러 (파란색) */
     position: absolute;
     left: 0;
     font-weight: bold;
@@ -111,11 +111,11 @@ li::before {
 .section-image {
     float: right;
     max-width: 45%;
-    margin-left: 2.5rem;
+    margin-left: 2rem;
     margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 그림자 조정 */
-    border: 1px solid #555; /* 이미지 테두리 */
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* 그림자 조정 */
+    border: 1px solid #ddd; /* 이미지 테두리 */
 }
 
 /* Clearfix for sections containing floated elements */
@@ -127,126 +127,121 @@ section::after {
 
 /* Reviews Section Quote Styling */
 #reviews blockquote {
-    border-left: 5px solid #7ac0ff; /* 포인트 컬러 */
+    border-left: 4px solid #007bff; /* 포인트 컬러 (파란색) */
     padding: 1rem 1.5rem;
-    margin-bottom: 1.5rem;
-    background-color: #333; /* 인용구 배경색 */
-    border-radius: 5px;
+    margin-bottom: 1.2rem;
+    background-color: #f8f9fa; /* 인용구 배경색 (밝은 회색) */
+    border-radius: 4px;
     font-style: normal;
-    color: #ddd; /* 인용구 텍스트 색상 */
-    font-size: 1.1rem; /* 이전 스타일로 복원 */
+    color: #555; /* 인용구 텍스트 색상 */
+    font-size: 1.05rem;
 }
 
 /* Location Section Styling */
 #location p {
-    margin-bottom: 0.8rem;
-    color: #ccc; /* 텍스트 색상 */
+    margin-bottom: 0.6rem;
+    color: #444; /* 텍스트 색상 */
 }
 
 #location strong {
-    color: #7ac0ff; /* 포인트 컬러 */
+    color: #0056b3; /* 더 진한 파란색 */
     display: inline-block;
-    min-width: 80px;
+    min-width: 70px;
     font-weight: 500;
 }
 
 #map {
-    border: 1px solid #555; /* 지도 영역 테두리 */
-    border-radius: 8px;
-    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
-    background: #444; /* 지도 배경색 (임시) */
-    color: #999; /* 지도 텍스트 색상 (임시) */
+    border: 1px solid #ddd; /* 지도 영역 테두리 */
+    border-radius: 6px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.1);
+    background: #e9ecef; /* 지도 배경색 (임시) */
+    color: #6c757d; /* 지도 텍스트 색상 (임시) */
 }
 
 /* Appointment Form Styling */
 #appointment form {
-    margin-top: 2rem;
-    background-color: #333; /* 폼 배경색 */
-    padding: 2rem;
-    border-radius: 8px;
-    border: 1px solid #555; /* 폼 테두리 */
+    margin-top: 1.5rem;
+    background-color: #f8f9fa; /* 폼 배경색 (밝은 회색) */
+    padding: 1.8rem;
+    border-radius: 6px;
+    border: 1px solid #ddd; /* 폼 테두리 */
 }
 
 #appointment label {
     display: block;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
-    color: #eee; /* 라벨 색상 */
+    color: #333; /* 라벨 색상 */
 }
 
 #appointment input[type="text"],
 #appointment input[type="tel"],
 #appointment textarea {
     width: 100%;
-    padding: 0.9rem;
-    border: 1px solid #555; /* 입력 필드 테두리 */
-    border-radius: 5px;
-    margin-bottom: 1.2rem;
+    padding: 0.8rem;
+    border: 1px solid #ced4da; /* 입력 필드 테두리 */
+    border-radius: 4px;
+    margin-bottom: 1rem;
     font-size: 1rem;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-    background-color: #444; /* 입력 필드 배경색 */
-    color: #eee; /* 입력 필드 텍스트 색상 */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff; /* 입력 필드 배경색 (흰색) */
+    color: #495057; /* 입력 필드 텍스트 색상 */
 }
 
 #appointment input[type="text"]:focus,
 #appointment input[type="tel"]:focus,
 #appointment textarea:focus {
-    border-color: #7ac0ff; /* 포커스 시 테두리 색상 */
+    border-color: #80bdff; /* 포커스 시 테두리 색상 (연한 파랑) */
     outline: none;
-    box-shadow: 0 0 5px rgba(122, 192, 255, 0.4);
-    background-color: #505050; /* 포커스 시 배경색 */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* 포커스 시 그림자 */
+    background-color: #fff;
 }
 
 #appointment textarea {
     resize: vertical;
-    min-height: 100px;
+    min-height: 90px;
 }
 
 #appointment button[type="submit"] {
-    background-color: #7ac0ff; /* 포인트 컬러 */
-    color: #1a1a1a; /* 버튼 텍스트 (어둡게) */
-    padding: 0.9rem 1.8rem;
+    background-color: #007bff; /* 포인트 컬러 (파란색) */
+    color: #ffffff; /* 버튼 텍스트 (흰색) */
+    padding: 0.8rem 1.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 1.1rem;
-    font-weight: bold; /* 버튼 텍스트 굵게 */
+    font-size: 1.05rem;
+    font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 #appointment button[type="submit"]:hover {
-    background-color: #5aaef3; /* 호버 시 약간 밝게 */
-    transform: translateY(-2px);
+    background-color: #0056b3; /* 호버 시 더 진한 파란색 */
+    transform: translateY(-1px);
 }
 
 #appointment blockquote {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
     text-align: center;
     font-weight: 500;
-    color: #7ac0ff; /* 포인트 컬러 */
-    font-size: 1.2rem;
+    color: #007bff; /* 포인트 컬러 (파란색) */
+    font-size: 1.1rem;
 }
 
 /* Footer Styles */
 footer {
     text-align: center;
-    padding: 2rem 0;
-    margin-top: 3rem;
-    color: #aaa; /* 푸터 텍스트 색상 */
-    background-color: #222; /* 푸터 배경색 */
-    border-top: 1px solid #444; /* 푸터 상단 테두리 */
+    padding: 1.5rem 0;
+    margin-top: 2.5rem;
+    color: #6c757d; /* 푸터 텍스트 색상 (회색) */
+    background-color: #f8f9fa; /* 푸터 배경색 (밝은 회색) */
+    border-top: 1px solid #e0e0e0; /* 푸터 상단 테두리 */
     font-size: 0.9rem;
 }
 
-/* Responsive Design */
+/* Responsive Design Adjustments for Light Theme */
 @media (max-width: 768px) {
-    /* 기존 반응형 스타일에 추가적인 색상 조정이 필요하다면 여기에 추가 */
-    /* ... */
-    .container {
-        padding: 0 1rem;
-    }
     header {
-        padding: 2rem 0;
+        padding: 1.5rem 0;
     }
     header h1 {
         font-size: 2.2rem;
@@ -255,50 +250,50 @@ footer {
         font-size: 1rem;
     }
     section {
-        padding: 1.8rem;
-        margin-bottom: 2rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
     }
     section h2 {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
     section h3 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
     #appointment form {
         padding: 1.5rem;
     }
-    #appointment button[type="submit"] {
-        width: 100%;
-        padding: 0.8rem;
-    }
-
     .section-image {
         float: none;
-        max-width: 100%;
-        margin-left: 0;
-        margin-top: 1.5rem;
+        max-width: 80%; /* 모바일에서는 이미지 너비 조정 */
+        margin: 0 auto 1.5rem auto; /* 가운데 정렬 및 하단 마진 */
         display: block;
-        margin: 1.5rem auto 1rem auto;
     }
 }
 
 @media (max-width: 480px) {
     body {
-        font-size: 15px;
+        line-height: 1.6;
     }
     header h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     header blockquote {
         font-size: 0.9rem;
     }
     section {
-        padding: 1.5rem;
+        padding: 1rem;
     }
     section h2 {
         font-size: 1.4rem;
     }
     section h3 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    #appointment button[type="submit"] {
+        width: 100%; /* 모바일에서 버튼 너비 전체 차지 */
+        padding: 0.9rem;
+    }
+    .section-image {
+        max-width: 95%; /* 더 작은 화면에서 이미지 너비 */
     }
 } 
